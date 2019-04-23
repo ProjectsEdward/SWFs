@@ -37,7 +37,7 @@
 				var flashvars = 
 				{
 					system : 'snes',
-					url : 'SWFs/roms/Super Mario Kart.smc'
+					url : '/SWFs/roms/Super Mario Kart.smc'
 				};
 				var params = {};
 				var attributes = {};
@@ -46,7 +46,7 @@
 				params.allowFullScreen = 'true';
 				params.allowFullScreenInteractive = 'true';
 				
-				swfobject.embedSWF('SWFs/flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'SWFs/flash/expressInstall.swf', flashvars, params, attributes);
+				swfobject.embedSWF('/SWFs/flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', '/SWFs/flash/expressInstall.swf', flashvars, params, attributes);
 			}
 		}
 		
