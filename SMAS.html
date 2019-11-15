@@ -1,8 +1,18 @@
+
+<head>
+<title>Edward's Website | Tynker</title>
+<link rel="stylesheet" href="games.css">
 <div class="header-title">
 			
 		</div>
-
-<body bgcolor="gray">
+	<a onclick="goBack()">Back</a>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</head>
+<body>
 	<center>
 	<div>
 	<div id="emulator">
@@ -36,16 +46,16 @@
 				var flashvars = 
 				{
 					system : 'snes',
-					url : 'https://projectsedward.github.io/SWFs/roms/SMAS.smc'
+					url : '/SWFs/roms/SMAS.smc'
 				};
 				var params = {};
 				var attributes = {};
 				
-				params.allowscriptaccess = 'always';
+				params.allowscriptaccess = 'sameDomain';
 				params.allowFullScreen = 'true';
 				params.allowFullScreenInteractive = 'true';
 				
-				swfobject.embedSWF('https://nesbox.github.io/emulator/flash/flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'https://nesbox.github.io/emulator/flash/flash/expressInstall.swf', flashvars, params, attributes);
+				swfobject.embedSWF('/SWFs/flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', '/SWFs/flash/expressInstall.swf', flashvars, params, attributes);
 			}
 		}
 		
