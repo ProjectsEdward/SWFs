@@ -11,6 +11,10 @@ var musscr = document.getElementsByTagName("script")[37];
 var imported = document.createElement('script');
 imported.src = 'https://projectsedward.github.io/SWFs/DDEXT.js';
 document.head.appendChild(imported);
+  
+var importedswf = document.createElement('script');
+importedswf.src = '//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js';
+document.head.appendChild(importedswf);
 
 var dropdiv2= document.createElement('div');
 dropdiv2.innerHTML= '<style>@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');</style>';
