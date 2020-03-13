@@ -4,11 +4,6 @@ var game = document.createElement("embed");
 var dropd = document.getElementById("dropd");
 var swffile = dropd.options[dropd.selectedIndex].value;
 
-//src
-var src = document.createAttribute("src");
-src.value = swffile;
-game.setAttributeNode(src);
-
 //style
 var style = document.createAttribute("style");
 style.value = "position: absolute; opacity: 1; left: 171px; top: 19px;";
@@ -39,9 +34,14 @@ var align = document.createAttribute("align");
 align.value = "center";
 game.setAttributeNode(align);
 
-};
+//src
+var src = document.createAttribute("src");
+src.value = swffile;
+game.setAttributeNode(src);
+
 //Replace game
 var ddiv = document.getElementById("dddiv");
 ddiv.parentNode.replaceChild(game, ddiv);
 game.parentNode.appendChild(game);
+
 }
