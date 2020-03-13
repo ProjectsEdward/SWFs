@@ -16,7 +16,7 @@ var dropdiv2= document.createElement('div');
 dropdiv2.innerHTML= '<style>@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');</style>';
 //Create dropdown
 var dropdiv= document.createElement('div');
-dropdiv.innerHTML= '<select style="background: #2b99ff; padding: 10px; color: #fff; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf">Doom</option><option value="https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf">SH Basketball</option><option value="https://projectsedward.github.io/SWFs/Happy%20Wheels.swf">Happy Wheels</option><option value="https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf">vvvvvv</option><option value="https://projectsedward.github.io/SWFs/Tank_Trouble.swf">Tank Trouble</option><option value="https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf">Clicker Heroes</option><option value="https://projectsedward.github.io/SWFs/BTD5.swf">BTD5</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 310px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setSWF() type=button>Set</button>';
+dropdiv.innerHTML= '<select style="background: #2b99ff; padding: 10px; color: #fff; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf">Doom</option><option value="https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf">SH Basketball</option><option value="https://projectsedward.github.io/SWFs/Happy%20Wheels.swf">Happy Wheels</option><option value="https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf">vvvvvv</option><option value="https://projectsedward.github.io/SWFs/Tank_Trouble.swf">Tank Trouble</option><option value="https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf">Clicker Heroes</option><option value="https://projectsedward.github.io/SWFs/BTD5.swf">BTD5</option><option value="https://projectsedward.github.io/SWFs/SuperMario63.swf">Super Mario 63</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 310px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setSWF() type=button>Set</button>';
 //add id to div
 var id = document.createAttribute("id");
 id.value = 'dddiv';
@@ -28,55 +28,4 @@ var swfbutton = document.getElementById("swfbutton");
 video.parentNode.removeChild(video);
 musscr.parentNode.removeChild(musscr);
 mainDD.parentNode.replaceChild(dropdiv, mainDD);
-//Append
-//dropd.parentNode.appendChild(dropd);
-//swfbutton.parentNode.appendChild(swfbutton);
-/* Code on Github
-function setSWF(){
-//get elements
-var game = document.createElement("embed");
-var dropd = document.getElementById("dropd");
-var swffile = dropd.options[dropd.selectedIndex].value;
-
-//style
-var style = document.createAttribute("style");
-style.value = "position: absolute; opacity: 1; left: 171px; top: 19px;";
-game.setAttributeNode(style);
-
-//width
-var width = document.createAttribute("width");
-width.value = 1024;
-game.setAttributeNode(width);
-
-//height
-var height = document.createAttribute("height");
-height.value = 700;
-game.setAttributeNode(height);
-
-//quality
-var quality = document.createAttribute("quality");
-quality.value = "high";
-game.setAttributeNode(quality);
-
-//pluginspage
-var pluginspage = document.createAttribute("pluginspage");
-pluginspage.value = "https://www.macromedia.com/go/getflashplayer";
-game.setAttributeNode(pluginspage);
-
-//align
-var align = document.createAttribute("align");
-align.value = "center";
-game.setAttributeNode(align);
-
-//src
-var src = document.createAttribute("src");
-src.value = swffile;
-game.setAttributeNode(src);
-
-//Replace game
-var ddiv = document.getElementById("dddiv");
-ddiv.parentNode.replaceChild(game, ddiv);
-game.parentNode.appendChild(game);
-
-}*/
 }
