@@ -1,1 +1,94 @@
-var _0x2eb0=['options','createElement','replaceChild','src','iframe','position:\x20absolute;\x20opacity:\x201;\x20left:\x20171px;\x20top:\x2019px;','pluginspage','createAttribute','pswdprot','style','height','dropd','dddiv','innerHTML','appendChild','setAttributeNode','parentNode','high','width','center','align','<select\x20style=\x22border-width:\x20thin;\x20background:\x20#2b99ff;\x20width:\x20152px;\x20padding:\x2012px;\x20color:\x20#fff;\x20position:\x20absolute;\x20opacity:\x201;\x20left:\x20180px;\x20top:\x2024px;\x20font-family:\x20\x27Roboto\x27,\x20sans-serif;\x22\x20id=\x22dropd\x22><option>\x20\x20</option><option\x20value=\x22https://piczel.tv/\x22>Live\x20Streams</option></select><a\x20style=\x22border-width:\x20thin;\x20background:\x20#2b99ff;\x20padding:\x2012px;\x20color:\x20#fff;\x20position:\x20absolute;\x20opacity:\x201;\x20left:\x20332px;\x20top:\x2024px;\x20font-family:\x20\x27Roboto\x27,\x20sans-serif;\x22\x20noreferrer\x22\x20id=\x22swfbutton\x22\x20onclick=framer()\x20type=button>Go</button>','getElementById','selectedIndex','value'];(function(_0x10d1ae,_0x2eb09f){var _0x3ff75d=function(_0x23b7f2){while(--_0x23b7f2){_0x10d1ae['push'](_0x10d1ae['shift']());}};_0x3ff75d(++_0x2eb09f);}(_0x2eb0,0xaa));var _0x3ff7=function(_0x10d1ae,_0x2eb09f){_0x10d1ae=_0x10d1ae-0x0;var _0x3ff75d=_0x2eb0[_0x10d1ae];return _0x3ff75d;};function setSWF(){var _0x547b7f=document[_0x3ff7('0x6')]('embed');var _0x3d078b=document[_0x3ff7('0x2')](_0x3ff7('0x10'));var _0x3cc653=_0x3d078b[_0x3ff7('0x5')][_0x3d078b[_0x3ff7('0x3')]][_0x3ff7('0x4')];if(_0x3cc653==_0x3ff7('0xd')){_0x3d078b[_0x3ff7('0x15')][_0x3ff7('0x12')]='<input\x20style=\x22background:\x20#2b99ff;\x20width:\x20152px;\x20padding:\x2012px;\x20color:\x20#fff;\x20border:\x201px\x20solid\x20black;\x20position:\x20absolute;\x20opacity:\x201;\x20left:\x20175px;\x20top:\x2024px;\x20font-family:\x20\x27Roboto\x27,\x20sans-serif;\x22\x20id=\x22dropd\x22><a\x20style=\x22border-width:\x20thin;\x20background:\x20#2b99ff;\x20padding:\x2012px;\x20color:\x20#fff;\x20position:\x20absolute;\x20opacity:\x201;\x20left:\x20332px;\x20top:\x2024px;\x20font-family:\x20\x27Roboto\x27,\x20sans-serif;\x22\x20noreferrer\x22\x20id=\x22swfbutton\x22\x20onclick=setpswd()\x20type=button>Go</button><script></script>';}else{var _0x4b5170=document[_0x3ff7('0xc')](_0x3ff7('0xe'));_0x4b5170[_0x3ff7('0x4')]=_0x3ff7('0xa');_0x547b7f[_0x3ff7('0x14')](_0x4b5170);var _0x6b4802=document[_0x3ff7('0xc')](_0x3ff7('0x17'));_0x6b4802[_0x3ff7('0x4')]=0x400;_0x547b7f['setAttributeNode'](_0x6b4802);var _0x4a3e49=document[_0x3ff7('0xc')]('height');_0x4a3e49[_0x3ff7('0x4')]=0x2bc;_0x547b7f['setAttributeNode'](_0x4a3e49);var _0x1a674f=document['createAttribute']('quality');_0x1a674f['value']=_0x3ff7('0x16');_0x547b7f[_0x3ff7('0x14')](_0x1a674f);var _0x235a03=document[_0x3ff7('0xc')](_0x3ff7('0xb'));_0x235a03[_0x3ff7('0x4')]='https://www.macromedia.com/go/getflashplayer';_0x547b7f[_0x3ff7('0x14')](_0x235a03);var _0x398f14=document['createAttribute'](_0x3ff7('0x0'));_0x398f14[_0x3ff7('0x4')]='center';_0x547b7f[_0x3ff7('0x14')](_0x398f14);var _0x211d8f=document[_0x3ff7('0xc')]('src');_0x211d8f[_0x3ff7('0x4')]=_0x3cc653;_0x547b7f[_0x3ff7('0x14')](_0x211d8f);var _0x86819a=document['getElementById'](_0x3ff7('0x11'));_0x86819a[_0x3ff7('0x15')][_0x3ff7('0x7')](_0x547b7f,_0x86819a);_0x547b7f[_0x3ff7('0x15')][_0x3ff7('0x13')](_0x547b7f);}}function setpswd(){var _0x4bb289=document[_0x3ff7('0x2')](_0x3ff7('0x10'));if(_0x4bb289[_0x3ff7('0x4')]=='pswd')_0x4bb289[_0x3ff7('0x15')][_0x3ff7('0x12')]=_0x3ff7('0x1');}function framer(){var _0x1a0d1a=document['createElement'](_0x3ff7('0x9'));var _0x4914f5=document[_0x3ff7('0x2')](_0x3ff7('0x10'));var _0x47efbb=_0x4914f5[_0x3ff7('0x5')][_0x4914f5['selectedIndex']][_0x3ff7('0x4')];var _0x160414=document[_0x3ff7('0xc')](_0x3ff7('0xe'));_0x160414['value']=_0x3ff7('0xa');_0x1a0d1a[_0x3ff7('0x14')](_0x160414);var _0x3a5bb6=document[_0x3ff7('0xc')](_0x3ff7('0x17'));_0x3a5bb6[_0x3ff7('0x4')]=0x400;_0x1a0d1a[_0x3ff7('0x14')](_0x3a5bb6);var _0x163b72=document[_0x3ff7('0xc')](_0x3ff7('0xf'));_0x163b72[_0x3ff7('0x4')]=0x2bc;_0x1a0d1a[_0x3ff7('0x14')](_0x163b72);var _0x21966e=document['createAttribute']('align');_0x21966e['value']=_0x3ff7('0x18');_0x1a0d1a[_0x3ff7('0x14')](_0x21966e);var _0x490037=document[_0x3ff7('0xc')](_0x3ff7('0x8'));_0x490037[_0x3ff7('0x4')]=_0x47efbb;_0x1a0d1a[_0x3ff7('0x14')](_0x490037);var _0x12dc3a=document[_0x3ff7('0x2')]('dddiv');_0x12dc3a[_0x3ff7('0x15')][_0x3ff7('0x7')](_0x1a0d1a,_0x12dc3a);_0x1a0d1a[_0x3ff7('0x15')][_0x3ff7('0x13')](_0x1a0d1a);}
+function setSWF(){
+//get elements
+var game = document.createElement("embed");
+var dropd = document.getElementById("dropd");
+var swffile = dropd.options[dropd.selectedIndex].value;
+
+if (swffile == "pswdprot") {
+  dropd.parentNode.innerHTML= '<input style="border-width: thin; background: #2b99ff; width: 152px; padding: 12px; color: #fff; border: 1px solid black; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setpswd() type=button>Go</button><script></script>';
+
+} else {
+
+//style
+var style = document.createAttribute("style");
+style.value = "position: absolute; opacity: 1; left: 171px; top: 19px;";
+game.setAttributeNode(style);
+
+//width
+var width = document.createAttribute("width");
+width.value = 1024;
+game.setAttributeNode(width);
+
+//height
+var height = document.createAttribute("height");
+height.value = 700;
+game.setAttributeNode(height);
+
+//quality
+var quality = document.createAttribute("quality");
+quality.value = "high";
+game.setAttributeNode(quality);
+
+//pluginspage
+var pluginspage = document.createAttribute("pluginspage");
+pluginspage.value = "https://www.macromedia.com/go/getflashplayer";
+game.setAttributeNode(pluginspage);
+
+//align
+var align = document.createAttribute("align");
+align.value = "center";
+game.setAttributeNode(align);
+
+//src
+var src = document.createAttribute("src");
+src.value = swffile;
+game.setAttributeNode(src);
+
+//Replace game
+var ddiv = document.getElementById("dddiv");
+ddiv.parentNode.replaceChild(game, ddiv);
+game.parentNode.appendChild(game);
+
+}
+}
+
+function setpswd(){
+  var dropd = document.getElementById("dropd");
+  if (dropd.value == "pswd")
+  dropd.parentNode.innerHTML= '<select style="border-width: thin; background: #2b99ff; width: 152px; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 180px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://piczel.tv/">Live Streams</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=framer() type=button>Go</button>';
+}
+
+function framer(){
+  var frame = document.createElement("iframe");
+  var dropd = document.getElementById("dropd");
+  var dropdv = dropd.options[dropd.selectedIndex].value;
+
+  //style
+  var style = document.createAttribute("style");
+  style.value = "position: absolute; opacity: 1; left: 171px; top: 19px;";
+  frame.setAttributeNode(style);
+
+  //width
+  var width = document.createAttribute("width");
+  width.value = 1024;
+  frame.setAttributeNode(width);
+
+  //height
+  var height = document.createAttribute("height");
+  height.value = 700;
+  frame.setAttributeNode(height);
+
+  //align
+  var align = document.createAttribute("align");
+  align.value = "center";
+  frame.setAttributeNode(align);
+
+  //src
+  var src = document.createAttribute("src");
+  src.value = dropdv;
+  frame.setAttributeNode(src);
+
+  var ddiv = document.getElementById("dddiv");
+  ddiv.parentNode.replaceChild(frame, ddiv);
+  frame.parentNode.appendChild(frame);
+}
