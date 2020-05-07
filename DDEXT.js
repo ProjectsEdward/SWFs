@@ -5,7 +5,7 @@ var dropd = document.getElementById("dropd");
 var swffile = dropd.options[dropd.selectedIndex].value;
 
 if (swffile == "pswdprot") {
-  dropd.parentNode.innerHTML= '<input style="border-width: thin; background: #2b99ff; width: 127px; padding: 12px; color: #fff; border: 0px solid black; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setpswd() type=button>Go</button><script></script>';
+  dropd.parentNode.innerHTML= '<input style="border-width: thin; background: #2b99ff; width: 127px; padding: 12px; color: #fff; border: 0px solid black; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setpswd() type=button>Go</button><script></script>';
 
 } else {
 
@@ -44,10 +44,10 @@ var src = document.createAttribute("src");
 src.value = swffile;
 game.setAttributeNode(src);
 
-//Replace game
+//Replace dropdown
 var ddiv = document.getElementById("dddiv");
-ddiv.parentNode.replaceChild(game, ddiv);
-game.parentNode.appendChild(game);
+ddiv.innerHTML = '';
+ddiv.appendChild(game);
 
 }
 }
@@ -55,7 +55,7 @@ game.parentNode.appendChild(game);
 function setpswd(){
   var dropd = document.getElementById("dropd");
   if (dropd.value == "pswd")
-  dropd.parentNode.innerHTML= '<select style="background: #2b99ff; border: 0px solid black; width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://piczel.tv/">Live Streams</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=framer() type=button>Go</button>';
+  dropd.parentNode.innerHTML= '<select style="background: #2b99ff; border: 0px solid black; width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://piczel.tv/">Live Streams</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=framer() type=button>Go</button>';
 }
 
 function framer(){
@@ -88,7 +88,8 @@ function framer(){
   src.value = dropdv;
   frame.setAttributeNode(src);
 
+  //Replace dropdown
   var ddiv = document.getElementById("dddiv");
-  ddiv.parentNode.replaceChild(frame, ddiv);
-  frame.parentNode.appendChild(frame);
+  ddiv.innerHTML = '';
+  ddiv.appendChild(frame);
 }
