@@ -5,7 +5,7 @@ var dropd = document.getElementById("dropd");
 var swffile = dropd.options[dropd.selectedIndex].value;
 
 if (swffile == "pswdprot") {
-  dropd.parentNode.innerHTML= '<input style="border-width: thin; background: #2b99ff; width: 127px; padding: 12px; color: #fff; border: 1px solid black; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setpswd() type=button>Go</button><script></script>';
+  dropd.parentNode.innerHTML= '<input style="border-width: thin; background: #2b99ff; width: 127px; padding: 12px; color: #fff; border: 0px solid black; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=setpswd() type=button>Go</button><script></script>';
 
 } else {
 
@@ -55,7 +55,7 @@ game.parentNode.appendChild(game);
 function setpswd(){
   var dropd = document.getElementById("dropd");
   if (dropd.value == "pswd")
-  dropd.parentNode.innerHTML= '<select style="border-width: thin; background: #2b99ff; width: 152px; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 180px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://piczel.tv/">Live Streams</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=framer() type=button>Go</button>';
+  dropd.parentNode.innerHTML= '<select style="background: #2b99ff; width: 152px; padding: 10px; color: #fff; position: absolute; opacity: 1; left: 175px; top: 24px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="https://piczel.tv/">Live Streams</option></select><a style="border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 332px; top: 24px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=framer() type=button>Go</button>';
 }
 
 function framer(){
