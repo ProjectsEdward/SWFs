@@ -13,6 +13,10 @@ var imported = document.createElement('script');
 imported.src = 'https://projectsedward.github.io/SWFs/DDEXT.js';
 document.head.appendChild(imported);
 
+var sha = document.createElement('script');
+sha.src = 'https://geraintluff.github.io/sha256/sha256.min.js';
+document.head.appendChild(sha);
+
 var dropstyle= document.createElement('style');
 dropstyle.innerHTML= '@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');';
 
