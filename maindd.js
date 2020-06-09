@@ -38,9 +38,7 @@ imagehider.setAttributeNode(width);
 var height = document.createAttribute("height");
 height.value = 768;
 imagehider.setAttributeNode(height);
-var style = document.createAttribute("style");
-style.value = "position: absolute;";
-imagehider.setAttributeNode(style);
+
 
 //add id to div
 var id = document.createAttribute("id");

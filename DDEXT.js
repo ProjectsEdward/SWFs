@@ -99,9 +99,15 @@ var src = document.createAttribute("src");
   if hideDDvalue == 0 {
   src.value = 'https://projectsedward.github.io/SWFs/ScreenSaver.png';
   hideDDvalue = 1;
+  var style = document.createAttribute("style");
+  style.value = "position: absolute;";
+  imagehider.setAttributeNode(style);
 } else {
   src.value = '';
   hideDDvalue = 0;
+  var style = document.createAttribute("style");
+  style.value = "position: absolute;";
+  imagehider.setAttributeNode(style);
 }
 }
 
