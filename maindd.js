@@ -9,8 +9,6 @@ var video = document.getElementsByTagName("video")[0];
 var musscr = document.getElementsByTagName("script")[37];
 var body = document.getElementsByTagName("body")[0];
 
-var hideDDvalue = 0;
-
 var imported = document.createElement('script');
 imported.src = 'https://projectsedward.github.io/SWFs/DDEXT.js';
 document.head.appendChild(imported);
@@ -28,16 +26,9 @@ dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black; 
 
 //Create reset div and create dropdown button
 var resetdiv= document.createElement('div');
-resetdiv.innerHTML= '<a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 0px; top: 364px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=resetDD() type=button>Reset</a><a style="width: 64px; cursor: pointer; border-width: thin; background: #000; height: 64px; color: #000; position: absolute; opacity: 1; left: 0px; top: 404px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=hideDD() type=button>Hide</a>';
+resetdiv.innerHTML= '<a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 0px; top: 364px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=resetDD() type=button>Reset</a>';
 
-//Image
-var imagehider= document.createElement('img');
-var width = document.createAttribute("width");
-width.value = 1366;
-imagehider.setAttributeNode(width);
-var height = document.createAttribute("height");
-height.value = 768;
-imagehider.setAttributeNode(height);
+
 
 
 //add id to div
@@ -53,6 +44,5 @@ var swfbutton = document.getElementById("swfbutton");
 video.parentNode.removeChild(video);
 musscr.parentNode.removeChild(musscr);
 body.appendChild(resetdiv);
-body.appendChild(imagehider);
 mainDD.parentNode.replaceChild(dropdiv, mainDD);
 }
