@@ -10,7 +10,7 @@ if (swffile == "pswdprot") {
 } else {
 //style
 var style = document.createAttribute("style");
-var fromtop = window.innerheight * 0.02
+var fromtop = window.innerHeight * 0.02
 style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.tostring() + 'px;';
 game.setAttributeNode(style);
 
@@ -65,7 +65,7 @@ function framer(){
 
   //style
   var style = document.createAttribute("style");
-  var fromtop = window.innerheight * 0.02
+  var fromtop = window.innerHeight * 0.02
   style.value = "position: absolute; opacity: 1; left: 171px; top: ' + fromtop.tostring() + 'px;";
   frame.setAttributeNode(style);
 
