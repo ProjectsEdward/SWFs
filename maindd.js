@@ -31,7 +31,7 @@ var resetdiv= document.createElement('div');
 resetdiv.innerHTML= '<a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 0px; top: 364px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=resetDD() type=button>Reset</a><a style="width: 64px; cursor: pointer; border-width: thin; background: #000; height: 64px; color: #000; position: absolute; opacity: 1; left: 0px; top: 404px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=hideDD() type=button>Hide</a>';
 
 //Image
-var imagehider= document.createElement('imag');
+var imagehider= document.createElement('img');
 var width = document.createAttribute("width");
 width.value = 1366;
 imagehider.setAttributeNode(width);
