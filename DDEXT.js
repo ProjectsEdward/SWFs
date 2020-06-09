@@ -96,7 +96,7 @@ function framer(){
 
 function hideDD(){
 var src = document.createAttribute("src");
-  if hideDDvalue == 0 {
+if hideDDvalue == 0 {
   src.value = 'https://projectsedward.github.io/SWFs/ScreenSaver.png';
   hideDDvalue = 1;
   var style = document.createAttribute("style");
