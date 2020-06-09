@@ -11,7 +11,7 @@ if (swffile == "pswdprot") {
 //style
 var style = document.createAttribute("style");
 var fromtop = window.innerHeight * 0.02
-style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.tostring() + 'px;';
+style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
 game.setAttributeNode(style);
 
 //width
@@ -66,7 +66,7 @@ function framer(){
   //style
   var style = document.createAttribute("style");
   var fromtop = window.innerHeight * 0.02
-  style.value = "position: absolute; opacity: 1; left: 171px; top: ' + fromtop.tostring() + 'px;";
+  style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
   frame.setAttributeNode(style);
 
   //width
