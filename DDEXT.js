@@ -95,11 +95,12 @@ function framer(){
 }
 
 function hideDD(){
+var src = document.createAttribute("src");
   if hideDDvalue = 0 {
-  imagehider.src= 'https://projectsedward.github.io/SWFs/ScreenSaver.png';
+  src.value = 'https://projectsedward.github.io/SWFs/ScreenSaver.png';
   hideDDvalue = 1;
 } else {
-  imagehider.src= '';
+  src.value = '';
   hideDDvalue = 0;
 }
 }
