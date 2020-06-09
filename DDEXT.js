@@ -70,7 +70,7 @@ function framer(){
 
   //width
   var width = document.createAttribute("width");
-  width.value = 1024;
+  width.value = 1244;
   frame.setAttributeNode(width);
 
   //height
@@ -92,4 +92,15 @@ function framer(){
   var ddiv = document.getElementById("dddiv");
   ddiv.innerHTML = '';
   ddiv.appendChild(frame);
+}
+
+function hideDD(){
+
+  if hideDDvalue = 0 {
+  imagehider.src= 'https://projectsedward.github.io/SWFs/ScreenSaver.png';
+  hideDDvalue = 1;
+} else {
+  imagehider.src= '';
+  hideDDvalue = 0;
+}
 }
