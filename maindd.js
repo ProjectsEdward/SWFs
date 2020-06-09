@@ -34,10 +34,10 @@ resetdiv.innerHTML= '<a style="cursor: pointer; border-width: thin; background: 
 var imagehider= document.createElement('imgdd');
 var width = document.createAttribute("width");
 width.value = 1366;
-frame.setAttributeNode(width);
+imagehider.setAttributeNode(width);
 var height = document.createAttribute("height");
 height.value = 768;
-game.setAttributeNode(height);
+imagehider.setAttributeNode(height);
 var src = document.createAttribute("src");
 
 //add id to div
