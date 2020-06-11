@@ -23,7 +23,6 @@ tempdiv.setAttributeNode(id);
 //remove video, replace with temp div
 video.parentNode.removeChild(video);
 musscr.parentNode.removeChild(musscr);
-body.appendChild(resetdiv);
-mainDD.parentNode.replaceChild(tempdiv, mainElement);
+mainElement.parentNode.replaceChild(tempdiv, mainElement);
 setupCall();
 }

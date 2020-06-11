@@ -20,13 +20,14 @@ function setupCall(){
   //get dropdown divs
   var dropd = document.getElementById("dropd");
   var swfbutton = document.getElementById("swfbutton");
-  
+
   //set font to Roboto
   var dropstyle= document.createElement('style');
   dropstyle.innerHTML= '@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');';
 
   var tempdiv = document.getElementById("tempdiv");
   tempdiv.parentNode.replaceChild(dropdiv, tempdiv);
+  body.appendChild(resetdiv);
 }
 
 function resetDD(){
