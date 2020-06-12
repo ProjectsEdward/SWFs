@@ -1,4 +1,8 @@
 function setupCall(){
+  //Register body
+  var body = document.getElementsByTagName("body")[0];
+
+  //Register SHA256
   var sha = document.createElement('script');
   sha.src = 'https://geraintluff.github.io/sha256/sha256.min.js';
   document.head.appendChild(sha);
@@ -25,8 +29,11 @@ function setupCall(){
   var dropstyle= document.createElement('style');
   dropstyle.innerHTML= '@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');';
 
+  //Replace tempdiv
   var tempdiv = document.getElementById("tempdiv");
   tempdiv.parentNode.replaceChild(dropdiv, tempdiv);
+
+  //Append reset button
   body.appendChild(resetdiv);
 }
 
