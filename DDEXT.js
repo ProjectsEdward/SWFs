@@ -86,6 +86,7 @@ function flasher(url){
 //get elements
 var game = document.createElement("embed");
 var dropd = document.getElementById("dropd");
+var canvas = document.getElementsByTagName("canvas")[0];
 
 //style
 var style = document.createAttribute("style");
@@ -95,12 +96,12 @@ game.setAttributeNode(style);
 
 //width
 var width = document.createAttribute("width");
-width.value = 1024;
+width.value = canvas.offsetWidth;
 game.setAttributeNode(width);
 
 //height
 var height = document.createAttribute("height");
-height.value = 700;
+height.value = canvas.offsetHeight;
 game.setAttributeNode(height);
 
 //quality
@@ -147,15 +148,16 @@ function framer(url){
   var fromtop = (window.innerHeight * 0.02) + 5
   style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
   frame.setAttributeNode(style);
+  var canvas = document.getElementsByTagName("canvas")[0];
 
   //width
   var width = document.createAttribute("width");
-  width.value = 1024;
+  width.value = canvas.offsetWidth;
   frame.setAttributeNode(width);
 
   //height
   var height = document.createAttribute("height");
-  height.value = 700;
+  height.value = canvas.offsetHeight;
   frame.setAttributeNode(height);
 
   //align
