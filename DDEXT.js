@@ -125,7 +125,7 @@ ddiv.innerHTML = '';
 ddiv.appendChild(game);
 
 }
-}
+
 
 //Create Iframe
 function framer(url){
