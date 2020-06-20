@@ -180,19 +180,3 @@ function framer(url){
   ddiv.innerHTML = '';
   ddiv.appendChild(frame);
 }
-
-//Fix Size
-while (true) {
-  var canvas = document.getElementsByTagName("canvas")[0];
-  var GameW = document.getElementById("dddiv");
-
-  //width
-  var width = document.createAttribute("width");
-  width.value = canvas.offsetWidth;
-  GameW.setAttributeNode(width);
-
-  //height
-  var height = document.createAttribute("height");
-  height.value = canvas.offsetHeight;
-  GameW.setAttributeNode(height);
-}
