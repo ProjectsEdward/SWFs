@@ -123,6 +123,11 @@ var src = document.createAttribute("src");
 src.value = url;
 game.setAttributeNode(src);
 
+//id
+var id = document.createAttribute("id");
+id.value = "GameW";
+game.setAttributeNode(id);
+
 //Replace dropdown
 var ddiv = document.getElementById("dddiv");
 ddiv.innerHTML = '';
@@ -163,8 +168,29 @@ function framer(url){
   src.value = dropdv;
   frame.setAttributeNode(src);
 
+  //id
+  var id = document.createAttribute("id");
+  id.value = "GameW";
+  frame.setAttributeNode(id);
+
   //Replace dropdown
   var ddiv = document.getElementById("dddiv");
   ddiv.innerHTML = '';
   ddiv.appendChild(frame);
+}
+
+//Fix Size
+while (true) {
+  var canvas = document.getElementsByTagName("canvas")[0];
+  var GameW = document.getElementById("dddiv");
+
+  //width
+  var width = document.createAttribute("width");
+  width.value = canvas.offsetWidth;
+  GameW.setAttributeNode(width);
+
+  //height
+  var height = document.createAttribute("height");
+  height.value = canvas.offsetHeight;
+  GameW.setAttributeNode(height);
 }
