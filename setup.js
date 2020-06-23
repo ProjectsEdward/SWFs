@@ -24,5 +24,5 @@ tempdiv.setAttributeNode(id);
 video.parentNode.removeChild(video);
 musscr.parentNode.removeChild(musscr);
 mainElement.parentNode.replaceChild(tempdiv, mainElement);
-setupCall();
+setTimeout(setupCall(), 1000)
 }
