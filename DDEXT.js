@@ -43,8 +43,8 @@ function buttonSet(){
   var code = dropd.options[dropd.selectedIndex].value;
 
   if (code == "pswdprot") {
-
-  } else {
+    paswordDD();
+} else {
   eval(code);
 }}
 
