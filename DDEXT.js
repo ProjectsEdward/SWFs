@@ -42,7 +42,7 @@ function buttonSet(){
   var dropd = document.getElementById("dropd");
   var code = dropd.options[dropd.selectedIndex].value;
 
-  if (code == pswdprot) {
+  if (code == "pswdprot") {
 
   } else {
   eval(code);
