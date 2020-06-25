@@ -11,7 +11,7 @@ function setupCall(){
   var dropdiv = document.createElement('div');
   var ddboxtop = (window.innerHeight * 0.02) + 10
   var ddbuttontop = (window.innerHeight * 0.02) + 54
-  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=games/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
+  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
   var id = document.createAttribute("id");
   id.value = 'dddiv';
   dropdiv.setAttributeNode(id);
@@ -37,7 +37,7 @@ function setupCall(){
   body.appendChild(resetdiv);
 }
 
-//Set Game Button (Runs code from Dropdown)
+//Set embed Button (Runs code from Dropdown)
 function buttonSet(){
   var dropd = document.getElementById("dropd");
   var code = dropd.options[dropd.selectedIndex].value;
@@ -53,7 +53,7 @@ function resetDD(){
   var dropdiv = document.getElementById("dddiv");
   var ddboxtop = (window.innerHeight * 0.02) + 10
   var ddbuttontop = (window.innerHeight * 0.02) + 54
-  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=games/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
+  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
 
 }
 
@@ -84,71 +84,77 @@ function setpswd(){
 function flasher(url){
 
 //get elements
-var game = document.createElement("embed");
+var embed = document.createElement("embed");
 var dropd = document.getElementById("dropd");
 var canvas = document.getElementsByTagName("canvas")[0];
 
 //style
+var fromtop = (window.innerHeight * 0.02) + 5;
+var fromleft = canvas.offsetLeft;
+
 var style = document.createAttribute("style");
-var fromtop = (window.innerHeight * 0.02) + 5
-style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
-game.setAttributeNode(style);
+style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
+embed.setAttributeNode(style);
 
 //width
 var width = document.createAttribute("width");
 width.value = canvas.offsetWidth;
-game.setAttributeNode(width);
+embed.setAttributeNode(width);
 
 //height
 var height = document.createAttribute("height");
 height.value = canvas.offsetHeight;
-game.setAttributeNode(height);
+embed.setAttributeNode(height);
 
 //quality
 var quality = document.createAttribute("quality");
 quality.value = "high";
-game.setAttributeNode(quality);
+embed.setAttributeNode(quality);
 
 //pluginspage
 var pluginspage = document.createAttribute("pluginspage");
 pluginspage.value = "https://www.macromedia.com/go/getflashplayer";
-game.setAttributeNode(pluginspage);
+embed.setAttributeNode(pluginspage);
 
 //align
 var align = document.createAttribute("align");
 align.value = "center";
-game.setAttributeNode(align);
+embed.setAttributeNode(align);
 
 //src
 var src = document.createAttribute("src");
 src.value = url;
-game.setAttributeNode(src);
+embed.setAttributeNode(src);
 
 //id
 var id = document.createAttribute("id");
-id.value = "GameW";
-game.setAttributeNode(id);
+id.value = "embedW";
+embed.setAttributeNode(id);
 
 //Replace dropdown
 var ddiv = document.getElementById("dddiv");
 ddiv.innerHTML = '';
-ddiv.appendChild(game);
+ddiv.appendChild(embed);
 
 }
 
 
 //Create Iframe
 function framer(url){
+
+//get elements
   var frame = document.createElement("iframe");
   var dropd = document.getElementById("dropd");
-  var dropdv = dropd.options[dropd.selectedIndex].value;
+  var canvas = document.getElementsByTagName("canvas")[0];
 
   //style
+  var fromtop = (window.innerHeight * 0.02) + 5;
+  var fromleft = canvas.offsetLeft;
+
   var style = document.createAttribute("style");
-  var fromtop = (window.innerHeight * 0.02) + 5
-  style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
+  style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
   frame.setAttributeNode(style);
-  var canvas = document.getElementsByTagName("canvas")[0];
+
 
   //width
   var width = document.createAttribute("width");
@@ -172,7 +178,7 @@ function framer(url){
 
   //id
   var id = document.createAttribute("id");
-  id.value = "GameW";
+  id.value = "embedW";
   frame.setAttributeNode(id);
 
   //Replace dropdown
@@ -191,7 +197,7 @@ function framerFullWidth(url){
   //style
   var style = document.createAttribute("style");
   var fromtop = (window.innerHeight * 0.02) + 5
-  style.value = 'position: absolute; opacity: 1; left: 171px; top: ' + fromtop.toString() + 'px;';
+  style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
   frame.setAttributeNode(style);
   var canvas = document.getElementsByTagName("canvas")[0];
 
@@ -217,7 +223,7 @@ function framerFullWidth(url){
 
   //id
   var id = document.createAttribute("id");
-  id.value = "GameW";
+  id.value = "embedW";
   frame.setAttributeNode(id);
 
   //Replace dropdown
