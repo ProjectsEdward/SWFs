@@ -1,36 +1,42 @@
-function setupCall(){
-  //Register body
-  var body = document.getElementsByTagName("body")[0];
 
+var dropdiv = document.createElement('div');
+
+//video styling
+var video = document.getElementsByTagName("video")[0
+var fromtop = video.offsetTop;
+var fromleft = video.offsetLeft;
+var fromtop10 = video.offsetTop + 10;
+var fromleft10 = video.offsetLeft + 10;
+var vwidth = video.offsetWidth;
+var vheight = video.offsetHeight;
+
+//get dropdown divs
+var dropd = document.getElementById("dropd");
+var swfbutton = document.getElementById("swfbutton");
+
+function setupCall(){
   //Register SHA256
   var sha = document.createElement('script');
   sha.src = 'https://geraintluff.github.io/sha256/sha256.min.js';
   document.head.appendChild(sha);
 
-  //Create dropdown div, create dropdown, and add id
-  var dropdiv = document.createElement('div');
-  var ddboxtop = (window.innerHeight * 0.02) + 10
-  var ddbuttontop = (window.innerHeight * 0.02) + 54
-  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
-  var id = document.createAttribute("id");
-  id.value = 'dddiv';
-  dropdiv.setAttributeNode(id);
+  //create dropdown
+  var ddbuttontop = fromtop10 + 44
+  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: ' + fromleft10.toString() + 'px; top: ' + fromtop10.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: ' + fromleft10.toString() + 'px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
 
   //Create reset div and create dropdown button
   var resetdiv= document.createElement('div');
   resetdiv.innerHTML= '<a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 0px; top: 0px; font-family: \'Roboto\', sans-serif;" noreferrer" id="resetbutton" onclick=resetDD() type=button>Reset</a>';
 
+  //set font to Roboto
+  var dropstyle= document.createElement('style');
+  dropstyle.innerHTML= '@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');';
 
   //get dropdown divs
   var dropd = document.getElementById("dropd");
   var swfbutton = document.getElementById("swfbutton");
 
-  //set font to Roboto
-  var dropstyle= document.createElement('style');
-  dropstyle.innerHTML= '@import url(\'https://fonts.googleapis.com/css?family=Roboto:500&display=swap\');';
-
   //Replace tempdiv
-  var tempdiv = document.getElementById("tempdiv");
   tempdiv.parentNode.replaceChild(dropdiv, tempdiv);
 
   //Append reset button
@@ -50,10 +56,8 @@ function buttonSet(){
 
 //Resetup
 function resetDD(){
-  var dropdiv = document.getElementById("dddiv");
-  var ddboxtop = (window.innerHeight * 0.02) + 10
-  var ddbuttontop = (window.innerHeight * 0.02) + 54
-  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddboxtop.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: 175px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
+  var ddbuttontop = fromtop10 + 44
+  dropdiv.innerHTML= '<select style="background: #2b99ff;border: 0px solid black;  width: 152px; padding: 11px; color: #fff; position: absolute; opacity: 1; left: ' + fromleft10.toString() + 'px; top: ' + fromtop10.toString() + 'px; font-family: \'Roboto\', sans-serif;" id="dropd"><option>  </option><option value="flasher(\'https://projectsedward.github.io/SWFs/Doom%20w800%20h500.swf\')">Doom</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Sports%20Heads%20Basketball.swf\')">SH Basketball</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Happy%20Wheels.swf\')">Happy Wheels</option><option value="flasher(\'https://projectsedward.github.io/SWFs/vvvvvv%20w640%20h480.swf\')">vvvvvv</option><option value="flasher(\'https://projectsedward.github.io/SWFs/Tank_Trouble.swf\')">Tank Trouble</option><option value="flasher(\'https://projectsedward.github.io/SWFs/ClickerHeroes%20w1000%20h563.swf\')">Clicker Heroes</option><option value="flasher(\'https://projectsedward.github.io/SWFs/BTD5.swf\')">BTD5</option><option value="flasher(\'https://projectsedward.github.io/SWFs/SuperMario63.swf\')">Super Mario 63</option><option value="flasher(\'https://www.mcleodgaming.com/flash/?f=embeds/SSF2Beta_v1_2_2_1.swf\')">BTD5</option><option value="framer(\'https://projectsedward.github.io/SWFs/skid-inc/\')">Skid Inc.</option><option value="pswdprot">Protected Content</option></select><a style="cursor: pointer; border-width: thin; background: #2b99ff; padding: 12px; color: #fff; position: absolute; opacity: 1; left: ' + fromleft10.toString() + 'px; top: ' + ddbuttontop.toString() + 'px; font-family: \'Roboto\', sans-serif;" noreferrer" id="swfbutton" onclick=buttonSet() type=button>Go</a>';
 
 }
 
@@ -83,58 +87,53 @@ function setpswd(){
 //Create Flash
 function flasher(url){
 
-//get elements
-var embed = document.createElement("embed");
-var dropd = document.getElementById("dropd");
-var canvas = document.getElementsByTagName("canvas")[0];
+  //get elements
+  var embed = document.createElement("embed");
+  var dropd = document.getElementById("dropd");
 
-//style
-var fromtop = (window.innerHeight * 0.02) + 5;
-var fromleft = canvas.offsetLeft;
+  //style
+  var style = document.createAttribute("style");
+  style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
+  embed.setAttributeNode(style);
 
-var style = document.createAttribute("style");
-style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
-embed.setAttributeNode(style);
+  //width
+  var width = document.createAttribute("width");
+  width.value = vwidth;
+  embed.setAttributeNode(width);
 
-//width
-var width = document.createAttribute("width");
-width.value = canvas.offsetWidth;
-embed.setAttributeNode(width);
+  //height
+  var height = document.createAttribute("height");
+  height.value = vheight;
+  embed.setAttributeNode(height);
 
-//height
-var height = document.createAttribute("height");
-height.value = canvas.offsetHeight;
-embed.setAttributeNode(height);
+  //quality
+  var quality = document.createAttribute("quality");
+  quality.value = "high";
+  embed.setAttributeNode(quality);
 
-//quality
-var quality = document.createAttribute("quality");
-quality.value = "high";
-embed.setAttributeNode(quality);
+  //pluginspage
+  var pluginspage = document.createAttribute("pluginspage");
+  pluginspage.value = "https://www.macromedia.com/go/getflashplayer";
+  embed.setAttributeNode(pluginspage);
 
-//pluginspage
-var pluginspage = document.createAttribute("pluginspage");
-pluginspage.value = "https://www.macromedia.com/go/getflashplayer";
-embed.setAttributeNode(pluginspage);
+  //align
+  var align = document.createAttribute("align");
+  align.value = "center";
+  embed.setAttributeNode(align);
 
-//align
-var align = document.createAttribute("align");
-align.value = "center";
-embed.setAttributeNode(align);
+  //src
+  var src = document.createAttribute("src");
+  src.value = url;
+  embed.setAttributeNode(src);
 
-//src
-var src = document.createAttribute("src");
-src.value = url;
-embed.setAttributeNode(src);
+  //id
+  var id = document.createAttribute("id");
+  id.value = "embedW";
+  embed.setAttributeNode(id);
 
-//id
-var id = document.createAttribute("id");
-id.value = "embedW";
-embed.setAttributeNode(id);
-
-//Replace dropdown
-var ddiv = document.getElementById("dddiv");
-ddiv.innerHTML = '';
-ddiv.appendChild(embed);
+  //Replace dropdown
+  ddiv.innerHTML = '';
+  dropdiv.appendChild(embed);
 
 }
 
@@ -142,15 +141,11 @@ ddiv.appendChild(embed);
 //Create Iframe
 function framer(url){
 
-//get elements
+  //get elements
   var frame = document.createElement("iframe");
   var dropd = document.getElementById("dropd");
-  var canvas = document.getElementsByTagName("canvas")[0];
 
   //style
-  var fromtop = (window.innerHeight * 0.02) + 5;
-  var fromleft = canvas.offsetLeft;
-
   var style = document.createAttribute("style");
   style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
   frame.setAttributeNode(style);
@@ -158,12 +153,12 @@ function framer(url){
 
   //width
   var width = document.createAttribute("width");
-  width.value = canvas.offsetWidth;
+  width.value = vwidth;
   frame.setAttributeNode(width);
 
   //height
   var height = document.createAttribute("height");
-  height.value = canvas.offsetHeight;
+  height.value = vheight;
   frame.setAttributeNode(height);
 
   //align
@@ -173,7 +168,7 @@ function framer(url){
 
   //src
   var src = document.createAttribute("src");
-  src.value = dropdv;
+  src.value = url;
   frame.setAttributeNode(src);
 
   //id
@@ -190,44 +185,42 @@ function framer(url){
 
 //Create Full Width Iframe
 function framerFullWidth(url){
-  var frame = document.createElement("iframe");
-  var dropd = document.getElementById("dropd");
-  var dropdv = dropd.options[dropd.selectedIndex].value;
 
-  //style
-  var style = document.createAttribute("style");
-  var fromtop = (window.innerHeight * 0.02) + 5
-  style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
-  frame.setAttributeNode(style);
-  var canvas = document.getElementsByTagName("canvas")[0];
+    //create frame
+    var frame = document.createElement("iframe");
 
-  //width
-  var width = document.createAttribute("width");
-  width.value = "100%";
-  frame.setAttributeNode(width);
+    //style
+    var style = document.createAttribute("style");
+    style.value = 'position: absolute; opacity: 1; left: ' + fromleft.toString() + 'px; top: ' + fromtop.toString() + 'px;';
+    frame.setAttributeNode(style);
 
-  //height
-  var height = document.createAttribute("height");
-  height.value = canvas.offsetHeight;
-  frame.setAttributeNode(height);
+    //width
+    var width = document.createAttribute("width");
+    width.value = (vheight / 9) * 16;
+    frame.setAttributeNode(width);
 
-  //align
-  var align = document.createAttribute("align");
-  align.value = "center";
-  frame.setAttributeNode(align);
+    //height
+    var height = document.createAttribute("height");
+    height.value = vheight;
+    frame.setAttributeNode(height);
 
-  //src
-  var src = document.createAttribute("src");
-  src.value = dropdv;
-  frame.setAttributeNode(src);
+    //align
+    var align = document.createAttribute("align");
+    align.value = "center";
+    frame.setAttributeNode(align);
 
-  //id
-  var id = document.createAttribute("id");
-  id.value = "embedW";
-  frame.setAttributeNode(id);
+    //src
+    var src = document.createAttribute("src");
+    src.value = url;
+    frame.setAttributeNode(src);
 
-  //Replace dropdown
-  var ddiv = document.getElementById("dddiv");
-  ddiv.innerHTML = '';
-  ddiv.appendChild(frame);
+    //id
+    var id = document.createAttribute("id");
+    id.value = "embedW";
+    frame.setAttributeNode(id);
+
+    //Replace dropdown
+    var ddiv = document.getElementById("dddiv");
+    ddiv.innerHTML = '';
+    ddiv.appendChild(frame);
 }

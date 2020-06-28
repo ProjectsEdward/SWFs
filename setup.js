@@ -2,27 +2,37 @@
 // https://mrcoles.com/bookmarklet/
 // https://projectsedward.github.io/SWFs/DDEXT.js
 
+//Register body, video, and tempory div
+var body = document.body;
+var video = document.getElementsByTagName("video")[0];
+var tempdiv = document.createElement('div');
+
 function setup(url){
 //fetch elements
 var mainElement = document.getElementsByClassName("clssweater-school-bd")[0];
 var video = document.getElementsByTagName("video")[0];
 var musscr = document.getElementsByTagName("script")[37];
-var body = document.getElementsByTagName("body")[0];
 
 var imported = document.createElement('script');
 imported.src = url;
 document.head.appendChild(imported);
 
 //create temp div
-var tempdiv = document.createElement('div');
 var id = document.createAttribute("id");
 id.value = 'tempdiv';
 tempdiv.setAttributeNode(id);
 
+//define non-video canvas
+var canvasno = document.getElementsByTagName("canvas")[0];
 
-//remove video, replace with temp div
-video.parentNode.removeChild(video);
-musscr.parentNode.removeChild(musscr);
-mainElement.parentNode.replaceChild(tempdiv, mainElement);
+//set video src to nothing
+var src = document.createAttribute("src");
+src.value = "";
+video.setAttributeNode(src);
+
+//replacem main canvas with temp div
+head.removeChild(musscr);
+body.removeChild(canvasno);
+body.replaceChild(tempdiv, mainElement);
 setTimeout(function() { setupCall();}, 500);
 }
