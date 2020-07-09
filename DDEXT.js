@@ -228,7 +228,7 @@ function framerFullWidth(url){
 // Play Music
 document.addEventListener ("keydown", function (zEvent) {
     if (zEvent.key === "u"  &&  zEvent.key === "r"  &&  zEvent.key === "d") {
-      new Audio('https://projectsedward.github.io/SWFs/Song.mp3/').play()
+      new Audio('https://projectsedward.github.io/SWFs/Song.mp3').play()
 
     }
 } );
