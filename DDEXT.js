@@ -2,7 +2,7 @@
 var dropdiv = document.createElement('div');
 
 //video styling
-var video = document.getElementsByTagName("video")[0
+var video = document.getElementsByTagName("video")[0];
 var fromtop = video.offsetTop;
 var fromleft = video.offsetLeft;
 var fromtop10 = video.offsetTop + 10;
@@ -226,10 +226,9 @@ function framerFullWidth(url){
 }
 
 // Play Music
-/* document.addEventListener ("keydown", function (zEvent) {
+ document.addEventListener ("keydown", function (zEvent) {
     if (zEvent.key === "u"  &&  zEvent.key === "r"  &&  zEvent.key === "d") {
       new Audio('https://projectsedward.github.io/SWFs/Song.mp3').play()
 
     }
 } );
-*/
