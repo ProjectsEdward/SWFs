@@ -8,6 +8,7 @@ var head = document.head;
 var video = document.getElementsByTagName("video")[0];
 var tempdiv = document.createElement('div');
 
+
 function setup(url){
 //fetch elements
 var mainElement = document.getElementsByClassName("clssweater-school-bd")[0];

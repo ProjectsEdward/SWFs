@@ -2,7 +2,6 @@
 var dropdiv = document.createElement('div');
 
 //video styling
-var video = document.getElementsByTagName("video")[0];
 var fromtop = video.offsetTop;
 var fromleft = video.offsetLeft;
 var fromtop10 = video.offsetTop + 10;
@@ -132,7 +131,7 @@ function flasher(url){
   embed.setAttributeNode(id);
 
   //Replace dropdown
-  ddiv.innerHTML = '';
+  dropdiv.innerHTML = '';
   dropdiv.appendChild(embed);
 
 }
@@ -177,9 +176,8 @@ function framer(url){
   frame.setAttributeNode(id);
 
   //Replace dropdown
-  var ddiv = document.getElementById("dddiv");
-  ddiv.innerHTML = '';
-  ddiv.appendChild(frame);
+  dropdiv.innerHTML = '';
+  dropdiv.appendChild(frame);
 }
 
 
@@ -220,9 +218,8 @@ function framerFullWidth(url){
     frame.setAttributeNode(id);
 
     //Replace dropdown
-    var ddiv = document.getElementById("dddiv");
-    ddiv.innerHTML = '';
-    ddiv.appendChild(frame);
+    dropdiv.innerHTML = '';
+    dropdiv.appendChild(frame);
 }
 
 // Play Music
