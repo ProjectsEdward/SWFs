@@ -33,7 +33,7 @@ video.setAttributeNode(src);
 
 //replacem main canvas with temp div
 head.removeChild(musscr);
-body.removeChild(canvasno);
+//body.removeChild(canvasno);
 body.replaceChild(tempdiv, mainElement);
 setTimeout(function() { setupCall();}, 500);
 }
