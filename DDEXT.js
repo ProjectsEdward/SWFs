@@ -2,12 +2,12 @@
 var dropdiv = document.createElement('div');
 
 //video styling
-var fromtop = video.offsetTop;
-var fromleft = video.offsetLeft;
-var fromtop10 = video.offsetTop + 10;
-var fromleft10 = video.offsetLeft + 10;
-var vwidth = video.offsetWidth;
-var vheight = video.offsetHeight;
+var fromtop = parseInt(video.offsetTop);
+var fromleft = parseInt(video.offsetLeft);
+var fromtop10 = parseInt(video.offsetTop) + 10;
+var fromleft10 = parseInt(video.offsetLeft) + 10;
+var vwidth = parseInt(video.offsetWidth);
+var vheight = parseInt(video.offsetHeight);
 
 //get dropdown divs
 var dropd = document.getElementById("dropd");
